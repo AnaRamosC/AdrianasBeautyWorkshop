@@ -1,0 +1,406 @@
+:root{
+    --colorRosaPrincipal:#964c72;
+    --fuenteAdrianas: 'Montez', cursive;
+    --colorFondoMenu: #e6e4e5;
+    --azulOscuro: #36268c;
+    --fuenteTextos: 'CaviarDreams';
+    --colorFondoCuerpo: white;
+    --colorMorado: #3a2247;
+    --colorDorado: #b78b1a;
+    --rosaFuerte:#ec6569;
+}
+
+
+@font-face {
+    font-family: "CaviarDreams";
+    src:
+      local("CaviarDreams"),
+      url("./CaviarDreams.ttf") format("ttf"),
+      url("./CaviarDreams.woff") format("woff");
+  }
+
+
+  html{
+    margin:0;
+    line-height: 1.15;
+  }
+  
+body{
+    max-width: 100%;
+    max-height: 100%;
+    margin:0;
+}
+
+.contenedor {
+
+    width: 90%;
+    margin: auto;
+
+}
+
+
+/* SECCION HEADER */
+
+header{
+    height: 12rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    
+}
+
+header>div{
+    height: 8rem;
+    display: grid;
+    grid: 1fr/1fr 1fr 1fr;
+    display: flex;
+    justify-content: center;
+    border-bottom: 1.5px solid var(--colorDorado);
+    padding-top: 1.5rem;
+    padding-bottom: 1rem;
+}
+
+header>div>img{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    max-height: 8rem;
+}
+
+
+nav{
+    padding: 0.5rem;
+    /* background-color: var(--colorFondoMenu); */
+    background-image: linear-gradient(to right, white 0%, #e6e4e5 90%);
+    border-bottom: 1px solid var(--colorDorado);
+    line-height: 1.15;
+}
+
+nav>div{
+    display: flex;
+    justify-content: space-between;
+}
+
+nav a{
+    color: var(--colorRosaPrincipal);
+    text-decoration: none;
+    font-family: var(--fuenteAdrianas);
+    font-size: 1.5rem;
+}
+
+nav a:hover{
+    text-decoration: underline 0.9px solid #36268c;
+    text-underline-offset: 0.25rem;
+}
+
+
+
+/* SECCIÓN CENTRAL */
+
+
+.fondoGeneral{
+    background-color:rgba(58, 34, 71, 0.1);
+    /* height: 50rem; */
+
+}
+
+
+main{
+    display: block;
+    text-align: center;
+    /* padding-top: 3rem; */
+    margin-top: 0;  
+}
+
+main h1{
+    font-family: var(--fuenteAdrianas);
+    font-size: 3.5rem;
+    color: var(--rosaFuerte);
+    /* background-color: rgba(183, 139, 26, 0.4); */
+    background-image: linear-gradient(to right,rgba(183, 139, 26, 0.5)10%, rgba(183, 139, 26, 0.25) 50%,rgba(183, 139, 26, 0.5)90%);
+    border: 1px solid var(--colorDorado);
+    padding-bottom: 0.5rem;
+    margin-top: 0;
+    padding-top: 0.75rem;
+    text-decoration: underline 2px solid var(--rosaFuerte);
+    text-underline-offset: 0.3rem;
+    
+}
+
+.subtitulo{
+    display: block;
+    text-align: center;
+    
+
+   
+}
+.subtitulo h2{
+    font-size: 1.5rem;
+    margin-top: 0;
+    padding-top: 0;
+    font-family: var(--fuenteTextos);
+    color: var(--rosaFuerte);
+    background-color: rgba(183, 139, 26, 0.2);
+    margin-bottom: 0;
+}
+
+.divTelefono{
+    margin-top: 3.5rem;
+    margin-bottom: 3.5rem;
+    text-align: center;
+    
+}
+
+.divTelefono a{
+    color: var(--colorMorado);
+    border: 2px solid var(--rosaFuerte);
+    display: inline-block;
+    background-color: rgba(183, 139, 26, 0.2);
+    padding: 1rem 4rem 1rem 4rem;
+    font-family: var(--fuenteTextos);
+    font-size: 1.5rem;
+    text-decoration: none;
+    
+}
+
+.divTelefono a:hover{
+    transform: scale(1.1);
+    color: rgba(54, 38, 140, 0.8);
+    text-decoration: underline 0.5px rgba(54, 38, 140, 0.8);
+    text-underline-offset: 0.25rem;
+    font-weight: bold;
+}
+
+
+
+.contenidoFormulario{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    font-family: var(--fuenteTextos);
+    color: var(--colorMorado);
+    line-height: 3rem;
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    font-size: 1.2rem;
+   
+    text-align: center;
+}
+
+fieldset{
+    border: solid var(--rosaFuerte);
+}
+
+.contenidoFormulario legend{
+    text-align: center;
+    color: var(--rosaFuerte);
+    font-weight: bold;
+    font-size: 1.3rem;
+    border: 2px solid var(--rosaFuerte);
+    background-color: rgba(183, 139, 26, 0.2);
+}
+
+.mensaje{
+    height: 3rem;
+}
+
+.borde, textarea{
+    border: 1px solid var(--rosaFuerte);
+    background-color: rgba(183, 139, 26, 0.2);
+}
+.botonEnviar{
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    width: 20%;
+    margin-left: 40%;
+    color: white;
+    padding: 1rem;
+    border-color: var(--azulOscuro);
+    background-color: rgba(54, 38, 140, 0.5);
+}
+
+.direccionHorario{
+    width: 50%;
+    margin-left: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.direccionHorario p{
+    font-family: var(--fuenteTextos);
+    color: var(--rosaFuerte);
+}
+
+.direccion2{
+    margin-top: 3rem;
+} 
+ .direccion2, .horario2{
+    text-decoration: underline var(--colorDorado);
+
+}
+
+
+
+.lunesViernes, .sabados{
+    color: var(--colorMorado) important!;
+    margin-left: 2rem;
+}
+.sabados{
+    margin-bottom: 0;
+    padding-bottom: 5rem;
+    margin-top: 0;
+} 
+
+.guionazul{
+    color:  rgba(54, 38, 140, 0.5);
+
+}
+
+.tellamamos{
+    padding-bottom: 3rem;
+}
+
+
+
+/* SECCIÓN FOOTER */
+
+footer{
+    height: 10.5rem;
+    background-image: linear-gradient(to right, white 0%, #e6e4e5 90%);
+    border-top: 1.5px solid var(--colorDorado);
+    border-bottom: 1.5px solid var(--colorDorado);
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+
+}
+
+footer h3{
+    font-family: var(--fuenteTextos);
+    font-size: 0.9rem;
+    color: var(--colorRosaPrincipal);
+}
+
+
+.informacionFooter{
+    display: grid;
+    grid: 1fr/ 1fr 1fr 1fr;
+
+}
+
+.horario {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    border-right: 1px solid var(--colorDorado);
+    padding-bottom: 0.9rem;
+  
+
+}
+
+.horario span{
+    color: var(--azulOscuro);
+}
+
+.telefono{
+    grid-column: 2/3;
+    grid-row: 1/2; 
+    padding-left: 1.5rem;
+    padding-bottom: 0.9rem;
+  
+}
+
+.telefono .numero{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+}
+
+
+.telefono .numero>a{
+    color: var(--colorRosaPrincipal);
+    font-family: var(--fuenteTextos);
+    font-size: 0.9rem;
+    font-weight: bold;
+    text-decoration: none;
+
+}
+
+.telefono .numero>a:hover{
+    text-decoration: underline solid var(--azulOscuro);
+    text-underline-offset: 0.25rem;
+}
+
+.telefono .direccion{
+    margin-top: 0;
+}
+
+.telefono .botonContacto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.telefono .botonContacto>a{
+       display: inline-block;
+       color: var(--colorRosaPrincipal);
+       font-family: var(--fuenteTextos);
+       font-size: 0.9rem;
+       font-weight: bold;
+       background-color: #e6e3e3;
+       padding: 0.5rem;
+       border-radius: 0.5rem;
+       border: 0.1rem solid var(--azulOscuro);
+       text-decoration: none;
+       margin-top: 0.9rem;
+}
+
+.telefono .botonContacto>a:hover{
+    border: 0.1rem solid var(--colorRosaPrincipal);
+    background-color: var(--colorRosaPrincipal);
+    color: white;
+}
+ 
+
+
+.redesSociales{
+    grid-column: 3/4;
+    grid-row: 1/2; 
+    border-left: 1px solid var(--colorDorado);
+    padding-left: 1.5rem;
+    padding-bottom: 0.9rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.redesSociales img{
+    margin-top: 0.9rem;
+}
+
+.divisionFooter{
+    border-bottom: 1px solid var(--colorDorado);
+    
+}
+
+
+.paginasLegales{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 0.45rem;
+    font-size: 0.6rem;
+    font-family: var(--fuenteTextos);
+    font-weight: bold;
+}
+
+.paginasLegales a{
+    color: var(--colorRosaPrincipal);
+    text-decoration: underline solid var(--azulOscuro);
+    text-underline-offset: 0.25rem;
+}

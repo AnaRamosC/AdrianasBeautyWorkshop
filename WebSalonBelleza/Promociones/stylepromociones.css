@@ -1,0 +1,401 @@
+:root{
+    --colorRosaPrincipal:#964c72;
+    --fuenteAdrianas: 'Montez', cursive;
+    --colorFondoMenu: #e6e4e5;
+    --azulOscuro: #36268c;
+    --fuenteTextos: 'CaviarDreams';
+    --colorFondoCuerpo: white;
+    --colorMorado: #3a2247;
+    --colorDorado: #b78b1a;
+    --rosaFuerte:#ec6569;
+}
+
+
+@font-face {
+    font-family: "CaviarDreams";
+    src:
+      local("CaviarDreams"),
+      url("./CaviarDreams.ttf") format("ttf"),
+      url("./CaviarDreams.woff") format("woff");
+  }
+
+
+  html{
+    margin:0;
+    line-height: 1.15;
+  }
+  
+body{
+    max-width: 100%;
+    max-height: 100%;
+    margin:0;
+}
+
+.contenedor {
+
+    width: 90%;
+    margin: auto;
+
+}
+
+
+/* SECCION HEADER */
+
+header{
+    height: 12rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    
+}
+
+header>div{
+    height: 8rem;
+    display: grid;
+    grid: 1fr/1fr 1fr 1fr;
+    display: flex;
+    justify-content: center;
+    border-bottom: 1.5px solid var(--colorDorado);
+    padding-top: 1.5rem;
+    padding-bottom: 1rem;
+}
+
+header>div>img{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    max-height: 8rem;
+}
+
+
+nav{
+    padding: 0.5rem;
+    /* background-color: var(--colorFondoMenu); */
+    background-image: linear-gradient(to right, white 0%, #e6e4e5 90%);
+    border-bottom: 1px solid var(--colorDorado);
+    line-height: 1.15;
+}
+
+nav>div{
+    display: flex;
+    justify-content: space-between;
+}
+
+nav a{
+    color: var(--colorRosaPrincipal);
+    text-decoration: none;
+    font-family: var(--fuenteAdrianas);
+    font-size: 1.5rem;
+}
+
+nav a:hover{
+    text-decoration: underline 0.9px solid #36268c;
+    text-underline-offset: 0.25rem;
+}
+
+
+
+/* SECCIÓN CENTRAL */
+
+
+.fondoGeneral{
+    /* background-image: url(./fondoBrillo.jpg);
+    background-size: cover;
+    background-position: bottom; */
+    background-color:rgba(58, 34, 71, 0.05);
+    /* height: 50rem; */
+
+}
+
+main{
+    /* display: flex;
+    justify-content: center; */
+    display: block;
+    text-align: center;
+    margin-top: 0;  
+
+}
+
+main h1{
+    /* font-family: var(--fuenteAdrianas);
+    font-size: 3.5rem;
+    color: var(--rosaFuerte);
+    padding-top: 3rem;
+    margin-top: 0;    */
+    font-family: var(--fuenteAdrianas);
+    font-size: 3.5rem;
+    color: var(--rosaFuerte);
+    background-image: linear-gradient(to right,rgba(183, 139, 26, 0.5)10%, rgba(183, 139, 26, 0.25) 50%,rgba(183, 139, 26, 0.5)90%);
+    /* background-color: rgba(183, 139, 26, 0.4); */
+    border: 1px solid var(--colorDorado);
+    padding-bottom: 0.5rem;
+    margin-top: 0;
+    padding-top: 0.75rem;
+    text-decoration: underline 2px solid var(--rosaFuerte);
+    text-underline-offset: 0.3rem;
+    
+
+
+}
+
+.cupones{
+    padding-top: 2rem;
+    padding-bottom: 5rem;
+    display: grid;
+    grid: repeat(2, 1fr)/4fr;
+}
+
+.cupon1,.cupon2{
+    margin-top: 1.5rem;
+    display: grid;
+    grid: 1fr/ 1fr 4fr;
+    background-color: rgba(236, 101, 105,0.25);
+    border: 2px dashed rgba(54, 38, 140, 0.7);
+}
+
+.vacio{
+    border-right: 2px dashed rgba(54, 38, 140, 0.7);
+}
+.descripcion{
+    font-family: var(--fuenteTextos);
+    color: var(--rosaFuerte);
+    
+}
+.descripcion h3{
+    display: flex;
+    justify-content: center;
+    font-weight: bolder;
+}
+
+.descripcion .texto {
+    font-weight:bold;
+    color: white;
+    line-height: 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    
+}
+
+.duracion{
+    display: flex;
+    justify-content: right;
+    font-style: italic;
+    margin-right: 1rem;
+  
+}
+.descripcion .duracion{
+    color: var(--rosaFuerte);
+}
+
+
+
+.cupon1{
+    margin-bottom: 1.5rem;
+}
+
+.cupon2{
+    margin-bottom: 1.5rem;
+}
+
+.estructura{
+    display: flex;
+    background-color: rgba(183, 139, 26, 0.3);
+    width: 75%;
+}
+.estructura .relleno{
+    width: 30%;
+}
+
+.estructura .cupon1{
+    width: 70%;
+    margin-right: 2rem;
+}
+
+/* .estructura .margenBlanco{
+    width: 25%;
+    background-color: none;
+} */
+
+.estructura2{
+    width: 75%;
+    background-color: rgba(183, 139, 26, 0.3);
+    display: flex;
+    
+}
+
+.estructura2 .cupon2{
+    width: 70%;
+    margin-left: 2rem;
+}
+
+.estructura2 .relleno2{
+    width: 30%;
+}
+
+.contenedorEstructura1{
+    display: flex;
+    justify-content: left;
+    margin-bottom: 1.5rem;
+}
+.contenedorEstructura2{
+    display: flex;
+    justify-content: right;
+    margin-top: 1.5rem;
+}
+
+.scrollButton{
+    display: none;
+    right: 2rem;
+    top: 20%;
+    background-image: url(../telefono.png);
+    background-size: cover;
+    width: 4.5rem;
+    height: 4.5rem;
+    position: fixed;
+}
+
+.scrollButton:hover{
+    background-color: var(--colorFondoMenu);
+    border-radius: 5rem;
+    border: 1px solid var(--colorRosaPrincipal);
+    transform: scale(1.1);
+    
+}
+
+/* SECCIÓN FOOTER */
+
+footer{
+    height: 10.5rem;
+    background-image: linear-gradient(to right, white 0%, #e6e4e5 90%);
+    border-top: 1.5px solid var(--colorDorado);
+    border-bottom: 1.5px solid var(--colorDorado);
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+
+}
+
+footer h3{
+    font-family: var(--fuenteTextos);
+    font-size: 0.9rem;
+    color: var(--colorRosaPrincipal);
+}
+
+
+.informacionFooter{
+    display: grid;
+    grid: 1fr/ 1fr 1fr 1fr;
+
+}
+
+.horario {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    border-right: 1px solid var(--colorDorado);
+    padding-bottom: 0.9rem;
+  
+
+}
+
+.horario span{
+    color: var(--azulOscuro);
+}
+
+.telefono{
+    grid-column: 2/3;
+    grid-row: 1/2; 
+    padding-left: 1.5rem;
+    padding-bottom: 0.9rem;
+  
+}
+
+.telefono .numero{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+}
+
+
+.telefono .numero>a{
+    color: var(--colorRosaPrincipal);
+    font-family: var(--fuenteTextos);
+    font-size: 0.9rem;
+    font-weight: bold;
+    text-decoration: none;
+
+}
+
+.telefono .numero>a:hover{
+    text-decoration: underline solid var(--azulOscuro);
+    text-underline-offset: 0.25rem;
+}
+
+.telefono .direccion{
+    margin-top: 0;
+}
+
+.telefono .botonContacto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.telefono .botonContacto>a{
+       display: inline-block;
+       color: var(--colorRosaPrincipal);
+       font-family: var(--fuenteTextos);
+       font-size: 0.9rem;
+       font-weight: bold;
+       background-color: #e6e3e3;
+       padding: 0.5rem;
+       border-radius: 0.5rem;
+       border: 0.1rem solid var(--azulOscuro);
+       text-decoration: none;
+       margin-top: 0.9rem;
+}
+
+.telefono .botonContacto>a:hover{
+    border: 0.1rem solid var(--colorRosaPrincipal);
+    background-color: var(--colorRosaPrincipal);
+    color: white;
+}
+ 
+
+
+.redesSociales{
+    grid-column: 3/4;
+    grid-row: 1/2; 
+    border-left: 1px solid var(--colorDorado);
+    padding-left: 1.5rem;
+    padding-bottom: 0.9rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.redesSociales img{
+    margin-top: 0.9rem;
+}
+
+.divisionFooter{
+    border-bottom: 1px solid var(--colorDorado);
+    
+}
+
+
+.paginasLegales{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 0.45rem;
+    font-size: 0.6rem;
+    font-family: var(--fuenteTextos);
+    font-weight: bold;
+}
+
+.paginasLegales a{
+    color: var(--colorRosaPrincipal);
+    text-decoration: underline solid var(--azulOscuro);
+    text-underline-offset: 0.25rem;
+}
