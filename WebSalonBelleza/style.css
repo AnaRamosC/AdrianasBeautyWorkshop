@@ -68,7 +68,6 @@ header>div>img{
 
 nav{
     padding: 0.5rem;
-    /* background-color: var(--colorFondoMenu); */
     background-image: linear-gradient(to right, white 0%, #e6e4e5 90%);
     border-bottom: 1px solid var(--colorDorado);
 }
@@ -90,7 +89,48 @@ nav a:hover{
     text-underline-offset: 0.25rem;
 }
 
+@media (min-width:769px){
+nav .mobile-menu{
+    display: none;
+}
+}
+@media (max-width:768px){
+    nav > div a {
+        display: none;
+    }
 
+    #current-page{
+        color: var(--colorRosaPrincipal);
+        font-family: var(--fuenteAdrianas);
+        font-size: 1.5rem;
+    }
+    .mobile-menu {
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        justify-content: left;
+    }
+    .mobile-menu #current-page {
+        margin-right: 10px;
+    }
+    .dropdown-menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        background-image: linear-gradient(to right, white 0%, #e6e4e5 90%);;
+        padding: 10px;
+    }
+    .dropdown-menu a {
+        display: block;
+        padding: 5px 0;
+        text-align: center;
+    }
+
+    .menu-icon{
+        cursor: pointer;
+        color: var(--colorRosaPrincipal);
+    }
+}
 
 /* SECCIÓN CENTRAL */
 
@@ -121,13 +161,24 @@ h1 .beauty{
     font-size: 2rem;
 }
 
+@media (max-width:768px){
+    main h1{
+        font-size: 2rem;
+        padding-top: 1.5rem;
+    }
+
+    h1 .beauty{
+        font-size: 1.5rem;
+    }
+}
+
 main h2{
     font-family: var(--fuenteTextos);
     color: var(--rosaFuerte);
     background-color: rgba(183, 139, 26, 0.2);
 }
 .fondoGeneral{
-    height: 50rem;
+    padding-bottom: 2.5rem;
     background-color:rgba(58, 34, 71, 0.05);
 }
 
@@ -341,6 +392,66 @@ footer h3{
 .divisionFooter{
     border-bottom: 1px solid var(--colorDorado);
     
+}
+
+@media (max-width:768px){
+    .informacionFooter{
+        display: grid;
+        grid: 1fr 1fr /1fr 1fr;
+        height: 8rem;
+    }
+
+    .horario{
+        grid-row: 1/2;
+        grid-column: 1/2;
+        border: none;
+        border-bottom: 1px solid var(--colorDorado);
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+    .telefono{
+        grid-row:1/2;
+        grid-column: 2/3;  
+        border: none;
+        padding-bottom: 0;
+        padding-left: 0;
+        margin-bottom: 0;
+    }
+
+    .telefono .numero>a, .telefono .botonContacto>a{
+        font-size: 0.5rem ;
+    }
+
+    .botonContacto{
+        margin-bottom: 2rem;
+    }
+    .redesSociales{
+        grid-row: 2/3;
+        grid-column: 1/3;
+        border: none;
+        padding-bottom: 0;
+        padding-left: 0;
+        margin-bottom: 1rem;
+    }
+
+    .redesSociales img{
+        height: 35px;
+        width: 35px;
+    }
+
+    .redesSociales .whatsapp img{
+        height: 30px;
+        width: 30px;
+    }
+
+ 
+    footer{
+        height: 10.5rem;
+    }
+
+    footer h3{
+        font-size: 0.5rem;
+    }
 }
 
 

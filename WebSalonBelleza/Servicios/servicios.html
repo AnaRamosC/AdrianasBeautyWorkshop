@@ -7,10 +7,6 @@
     <link rel="preload" href="./normalize.css" as="style">
     <link href="./normalize.css" rel="stylesheet">
 
-    <!-- <link rel="preload" href="./CaviarDreams.ttf">
-    <link href="./CaviarDreams.ttf" rel="stylesheet"> -->
-
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>    
     <link href="https://fonts.googleapis.com/css2?family=Montez&display=swap" rel="stylesheet">
@@ -34,6 +30,18 @@
                 <a href="../Promociones/promociones.html">Promociones</a>
                 <a href="../Equipo/equipo.html">Equipo</a>
                 <a href="../Contacto/contacto.html">Contacto/Pide cita</a>
+                <div class="mobile-menu">
+                    <span id="current-page">Servicios</span>
+                    <div class="menu-icon" onclick="toggleMenu()">☰</div>
+                    <div class="dropdown-menu">
+                        <a href="../index.html">Inicio</a>
+                        <a href="./servicios.html">Servicios</a>
+                        <a href="../Resultados/resultados.html">Resultados</a>
+                        <a href="../Promociones/promociones.html">Promociones</a>
+                        <a href="../Equipo/equipo.html">Equipo</a>
+                        <a href="../Contacto/contacto.html">Contacto/Pide cita</a>
+                    </div>
+                </div>
             </div>
         </nav>
     </header>
@@ -241,5 +249,6 @@
 
     <script src="./eventoCartas.js"></script>
     <script src="../eventoFlotante.js"></script>
+    <script src="../menudesplegable.js"></script>
 </body>
 </html>

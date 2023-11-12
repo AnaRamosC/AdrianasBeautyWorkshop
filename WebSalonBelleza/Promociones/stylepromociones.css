@@ -93,7 +93,48 @@ nav a:hover{
     text-underline-offset: 0.25rem;
 }
 
-
+@media (min-width:769px){
+    nav .mobile-menu{
+        display: none;
+    }
+    }
+    @media (max-width:768px){
+        .contenedor a {
+            display: none;
+        }
+    
+        #current-page{
+            color: var(--colorRosaPrincipal);
+            font-family: var(--fuenteAdrianas);
+            font-size: 1.5rem;
+        }
+        .mobile-menu {
+            display: flex;
+            flex-direction: column;
+            align-items: left;
+            justify-content: left;
+        }
+        .mobile-menu #current-page {
+            margin-right: 10px;
+        }
+        .dropdown-menu {
+            display: none;
+            flex-direction: column;
+            position: absolute;
+            background-image: linear-gradient(to right, white 0%, #e6e4e5 90%);;
+            padding: 10px;
+        }
+        .dropdown-menu a {
+            display: block;
+            padding: 5px 0;
+            text-align: center;
+        }
+    
+        .menu-icon{
+            cursor: pointer;
+            color: var(--colorRosaPrincipal);
+        }
+    }
 
 /* SECCIÓN CENTRAL */
 
@@ -117,16 +158,10 @@ main{
 }
 
 main h1{
-    /* font-family: var(--fuenteAdrianas);
-    font-size: 3.5rem;
-    color: var(--rosaFuerte);
-    padding-top: 3rem;
-    margin-top: 0;    */
     font-family: var(--fuenteAdrianas);
     font-size: 3.5rem;
     color: var(--rosaFuerte);
     background-image: linear-gradient(to right,rgba(183, 139, 26, 0.5)10%, rgba(183, 139, 26, 0.25) 50%,rgba(183, 139, 26, 0.5)90%);
-    /* background-color: rgba(183, 139, 26, 0.4); */
     border: 1px solid var(--colorDorado);
     padding-bottom: 0.5rem;
     margin-top: 0;
@@ -135,6 +170,14 @@ main h1{
     text-underline-offset: 0.3rem;
     
 
+
+}
+
+@media (max-width:768px){
+    main h1{
+        font-size: 2rem;
+        padding-top: 1.5rem;
+    }
 
 }
 
