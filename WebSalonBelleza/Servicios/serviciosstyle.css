@@ -596,22 +596,6 @@ footer h3{
     
 }
 
-
-.paginasLegales{
-    display: flex;
-    justify-content: space-evenly;
-    margin-top: 0.45rem;
-    font-size: 0.6rem;
-    font-family: var(--fuenteTextos);
-    font-weight: bold;
-}
-
-.paginasLegales a{
-    color: var(--colorRosaPrincipal);
-    text-decoration: underline solid var(--azulOscuro);
-    text-underline-offset: 0.25rem;
-}
-
 @media (max-width:768px){
 
     footer{
@@ -687,3 +671,20 @@ footer h3{
         font-size: 0.5rem;
     }
 }
+
+
+.paginasLegales{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 0.45rem;
+    font-size: 0.6rem;
+    font-family: var(--fuenteTextos);
+    font-weight: bold;
+}
+
+.paginasLegales a{
+    color: var(--colorRosaPrincipal);
+    text-decoration: underline solid var(--azulOscuro);
+    text-underline-offset: 0.25rem;
+}
+
