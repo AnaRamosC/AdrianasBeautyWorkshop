@@ -263,6 +263,7 @@ main h2{
     }
 
     .fondoGeneral{
+        background-color:rgba(58, 34, 71, 0.05);
         padding-bottom: 2.5rem;
     }
 
@@ -270,7 +271,18 @@ main h2{
     
 }
 
-
+@media (max-width:768px){
+    .scrollButton{
+        display: none;
+        right: 0.5rem;
+        top: 20%;
+        background-image: url(./telefono.png);
+        background-size: cover;
+        position: fixed;
+        height: 2rem;
+        width: 2rem;
+    }
+}
 
 /* SECCIÓN FOOTER */
 
@@ -395,17 +407,29 @@ footer h3{
 }
 
 @media (max-width:768px){
+
+    footer{
+        height: 10.5rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .divisionFooter{
+        height: 90%;
+    }
+
+    .finalPagina{
+        height: 90%;
+    }
     .informacionFooter{
         display: grid;
-        grid: 1fr 1fr /1fr 1fr;
-        height: 8rem;
+        grid: 1fr 0.5fr /1fr 1fr;
     }
 
     .horario{
         grid-row: 1/2;
         grid-column: 1/2;
         border: none;
-        border-bottom: 1px solid var(--colorDorado);
         padding-bottom: 0;
         margin-bottom: 0;
     }
@@ -423,7 +447,7 @@ footer h3{
     }
 
     .botonContacto{
-        margin-bottom: 2rem;
+        margin-bottom: 0;
     }
     .redesSociales{
         grid-row: 2/3;
@@ -435,13 +459,13 @@ footer h3{
     }
 
     .redesSociales img{
-        height: 35px;
-        width: 35px;
+        height: 30px;
+        width: 30px;
     }
 
     .redesSociales .whatsapp img{
-        height: 30px;
-        width: 30px;
+        height: 25px;
+        width: 25px;
     }
 
  
