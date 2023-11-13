@@ -419,8 +419,9 @@ footer h3{
     }
 
     .finalPagina{
-        height: 90%;
+        height: 10%;
     }
+    
     .informacionFooter{
         display: grid;
         grid: 1fr 0.5fr /1fr 1fr;

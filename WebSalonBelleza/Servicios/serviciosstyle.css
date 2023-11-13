@@ -100,7 +100,7 @@ nav a:hover{
     }
     
 @media (max-width:768px){
-        .contenedor a {
+       header .contenedor a {
             display: none;
         }
     
@@ -461,18 +461,6 @@ p{
     
 }
 
-@media (max-width:768px){
-    .scrollButton{
-        display: none;
-        right: 0.5rem;
-        top: 20%;
-        background-image: url(./telefono.png);
-        background-size: cover;
-        position: fixed;
-        height: 2rem;
-        width: 2rem;
-    }
-}
 
 /* SECCIÓN FOOTER */
 
@@ -491,6 +479,7 @@ footer h3{
     font-size: 0.9rem;
     color: var(--colorRosaPrincipal);
 }
+
 
 
 .informacionFooter{
@@ -538,7 +527,7 @@ footer h3{
 }
 
 .telefono .numero>a:hover{
-    text-decoration: underline solid var(--azulOscuro);
+    text-decoration: underline 0.05rem solid var(--azulOscuro);
     text-underline-offset: 0.25rem;
 }
 
@@ -597,6 +586,7 @@ footer h3{
 }
 
 @media (max-width:768px){
+    
 
     footer{
         height: 10.5rem;
@@ -609,7 +599,7 @@ footer h3{
     }
 
     .finalPagina{
-        height: 90%;
+        height: 10%;
     }
     .informacionFooter{
         display: grid;
@@ -659,16 +649,16 @@ footer h3{
     }
 
  
-    footer{
-        height: 10.5rem;
-    }
-
     footer h3{
         font-size: 0.6rem;
     }
 
     .paginasLegales{
         font-size: 0.5rem;
+    }
+
+    .whatsapp{
+        z-index: 100;
     }
 }
 
@@ -687,4 +677,5 @@ footer h3{
     text-decoration: underline solid var(--azulOscuro);
     text-underline-offset: 0.25rem;
 }
+
 
