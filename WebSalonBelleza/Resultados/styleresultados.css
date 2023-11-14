@@ -98,8 +98,9 @@ nav a:hover{
         display: none;
     }
     }
-    @media (max-width:768px){
-        .contenedor a {
+
+@media (max-width:768px){
+        nav div>a {
             display: none;
         }
     
@@ -587,8 +588,9 @@ footer h3{
     }
 
     .finalPagina{
-        height: 90%;
+        height: 10%;
     }
+    
     .informacionFooter{
         display: grid;
         grid: 1fr 0.5fr /1fr 1fr;
@@ -636,16 +638,17 @@ footer h3{
         width: 25px;
     }
 
- 
-    footer{
-        height: 10.5rem;
-    }
-
     footer h3{
         font-size: 0.6rem;
     }
 
     .paginasLegales{
+        margin-top: 0.2rem;
         font-size: 0.5rem;
+        font-family: var(--fuenteTextos);
+        font-weight: bold;
+            
     }
+
+    
 }

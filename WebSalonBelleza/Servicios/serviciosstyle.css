@@ -100,7 +100,7 @@ nav a:hover{
     }
     
 @media (max-width:768px){
-       header .contenedor a {
+       nav div > a {
             display: none;
         }
     
@@ -585,8 +585,24 @@ footer h3{
     
 }
 
+
+
+.paginasLegales{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 0.45rem;
+    font-size: 0.6rem;
+    font-family: var(--fuenteTextos);
+    font-weight: bold;
+}
+
+.paginasLegales a{
+    color: var(--colorRosaPrincipal);
+    text-decoration: underline solid var(--azulOscuro);
+    text-underline-offset: 0.25rem;
+}
+
 @media (max-width:768px){
-    
 
     footer{
         height: 10.5rem;
@@ -601,6 +617,7 @@ footer h3{
     .finalPagina{
         height: 10%;
     }
+    
     .informacionFooter{
         display: grid;
         grid: 1fr 0.5fr /1fr 1fr;
@@ -648,34 +665,17 @@ footer h3{
         width: 25px;
     }
 
- 
     footer h3{
         font-size: 0.6rem;
     }
 
     .paginasLegales{
+        margin-top: 0.2rem;
         font-size: 0.5rem;
+        font-family: var(--fuenteTextos);
+        font-weight: bold;
+            
     }
 
-    .whatsapp{
-        z-index: 100;
-    }
+    
 }
-
-
-.paginasLegales{
-    display: flex;
-    justify-content: space-evenly;
-    margin-top: 0.45rem;
-    font-size: 0.6rem;
-    font-family: var(--fuenteTextos);
-    font-weight: bold;
-}
-
-.paginasLegales a{
-    color: var(--colorRosaPrincipal);
-    text-decoration: underline solid var(--azulOscuro);
-    text-underline-offset: 0.25rem;
-}
-
-
