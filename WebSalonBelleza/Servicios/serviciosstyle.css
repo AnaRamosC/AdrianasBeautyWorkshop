@@ -178,10 +178,7 @@ main h1{
     display: none;
 }
 
-.todosServciosBoton{
-    display: flex;
-    flex-direction: row;
-}
+
 /* manicura */
 
 .manicura{
@@ -243,7 +240,7 @@ p{
     align-items: center;
 }
 
-.ultimo{
+.manicuraTipos .ultimo{
     border: none !important;
 }
 
@@ -317,6 +314,130 @@ p{
     
 }
 
+@media (max-width:768px){
+    h2{
+        font-size: 1.2rem;
+    }
+
+    .manicuraTipos h3{
+        font-size: 1rem;
+        margin: 0;
+    }
+
+    .todosServicios .manicuraTipos{
+        display: flex;
+        flex-direction: column;
+    }
+
+    
+    .manicuraTipos .impar1, .manicuraTipos .par1{
+        height: 16rem;
+    }
+   .manicuraTipos .par2{
+        height: 20rem;
+    }
+    
+
+    .manicuraTipos .impar2{
+        height: 25rem;
+    }
+
+    .manicuraTipos p{
+        font-size: 0.7rem;
+    }
+
+    .manicuraTipos .sinImagen{
+        display: flex;
+        justify-content: left;
+        height:12rem;
+    }
+
+    .manicuraTipos .impar, .manicuraTipos .par{
+        display: grid;
+        grid: 30% 70%/ 1fr 1fr 1fr 1fr; 
+        row-gap: 1rem;
+    
+    }
+
+    .manicuraTipos .impar .imagen, .manicuraTipos .par .imagen{
+        grid-row: 1/2;
+        grid-column: 2/4;
+        margin-top: 1rem;
+    }
+    .manicuraTipos .impar .descripcion, .manicuraTipos .par .descripcion{
+        grid-row: 2/3;
+        grid-column: 1/5;
+    }
+
+    .manicuraTipos .par1 .imagen, .manicuraTipos .par2 .imagen{
+        background-position: bottom;
+    }
+
+
+   
+}
+
+@media (min-width:500px) and (max-width:767px){
+    h2{
+        font-size: 1.2rem;
+    }
+
+    .manicuraTipos h3{
+        font-size: 1rem;
+        margin: 0;
+    }
+
+    .todosServicios .manicuraTipos{
+        display: flex;
+        flex-direction: column;
+    }
+
+    
+    .manicuraTipos .impar1, .manicuraTipos .par1{
+        height: 16rem;
+    }
+   .manicuraTipos .par2{
+        height: 20rem;
+    }
+    
+
+    .manicuraTipos .impar2{
+        height: 25rem;
+    }
+
+    .manicuraTipos p{
+        font-size: 0.7rem;
+    }
+
+    .manicuraTipos .sinImagen{
+        display: flex;
+        justify-content: left;
+        height:12rem;
+    }
+
+    .manicuraTipos .impar, .manicuraTipos .par{
+        display: grid;
+        grid: 40% 60%/ 1fr 1fr 1fr 1fr; 
+        row-gap: 1rem;
+    
+    }
+
+    .manicuraTipos .impar .imagen, .manicuraTipos .par .imagen{
+        grid-row: 1/2;
+        grid-column: 2/4;
+        margin-top: 1rem;
+    }
+    .manicuraTipos .impar .descripcion, .manicuraTipos .par .descripcion{
+        grid-row: 2/3;
+        grid-column: 1/5;
+    }
+
+    .manicuraTipos .par1 .imagen, .manicuraTipos .par2 .imagen{
+        background-position: bottom;
+    }
+}
+
+
 /*pedicura*/
 
 
@@ -360,6 +481,21 @@ p{
     padding-bottom: 2rem;
 }
 
+
+@media (max-width:768px){
+    .divFotoPedicura img{
+        height: 200px;
+    }
+}
+
+@media (max-width:350px){
+    .pedicuraTipos>div p{
+        font-size: 0.7rem;
+    }
+}
+
+/* pestañas */
+
 .pestañas{
     background-color: var(--colorFondoCuerpo);
     max-width: 70%;
@@ -375,12 +511,18 @@ p{
     padding-bottom: 0.5rem;
 }
 
+
+
 .pestañasTipos{
     border-bottom: 2px solid var(--rosaFuerte);
     height:11.65rem;
     display: grid;
     grid: 1fr/repeat(5,1fr);
     column-gap: 1rem;
+}
+
+.pestañasTipos .pestañasVacio{
+    display: none;
 }
 
 .pestañasTipos>div{
@@ -391,6 +533,9 @@ p{
     align-items: right;
 }
 
+.pestañasTipos .ultimo{
+    border-right: none;
+}
 .divFotoPestañas{
     display: flex;
     flex-direction: row;
@@ -407,6 +552,54 @@ p{
 @media (min-width:768px) and (max-width:1140px){
     .divFotoPestañas img{
         height: 225px;
+    }
+}
+
+@media (max-width:767px){
+    .pestañasTipos{
+        display: grid;
+        grid: 2fr 2fr/ 1fr 1fr 1fr;
+        height: 25rem;
+        border-bottom: none;
+        column-gap: 0;
+    }
+
+    .pestañasTipos>div{
+        border-bottom: 2px solid var(--rosaFuerte); 
+        padding-left: 0.5rem;
+    }
+
+    .pestañasTipos .pestañasVacio{
+        display:block;
+        grid-row: 2/3;
+        grid-column: 2/3;
+        border-right: 2px solid var(--rosaFuerte);
+    }
+
+    .pestañasTipos .ultimo{
+        grid-row: 2/3;
+        grid-column: 3/4;
+        border-right: 2px solid var(--rosaFuerte);
+    }
+
+    .pestañas1, .pestañas4{
+        border-left: 2px solid var(--rosaFuerte);
+       
+    }
+
+    .pestañas4, .pedicuraTipos .ultimo{
+        border-left: 2px solid var(--rosaFuerte);
+    }
+
+
+    .divFotoPestañas img{
+        height: 150px;
+    }
+}
+
+@media (max-width:325px){
+    .divFotoPestañas img{
+        height: 120px;
     }
 }
 
@@ -462,7 +655,39 @@ p{
 }
 
 
+
+@media (min-width:500px) and (max-width:768px){
+    .scrollButton{
+        display: none;
+        right: 0.5rem;
+        top: 20%;
+        background-image: url(../telefono.png);
+        background-size: cover;
+        position: fixed;
+        height: 3.5rem;
+        width: 3.5rem;
+    }
+}
+
+@media (max-width:499px){
+    .scrollButton{
+        display: none;
+        right: 0rem;
+        top: 20%;
+        background-image: url(../telefono.png);
+        background-size: cover;
+        position: fixed;
+        height: 2.5rem;
+        width: 2.5rem;
+    }
+}
+
+
+
 /* SECCIÓN FOOTER */
+
+
+
 
 footer{
     height: 10.5rem;
@@ -479,7 +704,6 @@ footer h3{
     font-size: 0.9rem;
     color: var(--colorRosaPrincipal);
 }
-
 
 
 .informacionFooter{
@@ -527,7 +751,7 @@ footer h3{
 }
 
 .telefono .numero>a:hover{
-    text-decoration: underline 0.05rem solid var(--azulOscuro);
+    text-decoration: underline solid var(--azulOscuro);
     text-underline-offset: 0.25rem;
 }
 
@@ -584,7 +808,6 @@ footer h3{
     border-bottom: 1px solid var(--colorDorado);
     
 }
-
 
 
 .paginasLegales{

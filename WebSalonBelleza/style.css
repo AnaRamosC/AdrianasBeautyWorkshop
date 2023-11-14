@@ -222,7 +222,7 @@ main h2{
 }
 
 
-.presentacion .divImgMovil{
+.presentacion>.divImgMovil{
     display:none;
 }
 
@@ -266,12 +266,12 @@ main h2{
         max-width: 100%;
     }
     
-    .presentacion .divImg{
+    .presentacion .divImgOrdenador{
         margin-top: -4rem;
         display: flex;
         justify-content: center;  
     }
-    .divImg img{
+    .divImgOrdenador img{
         width:367.2px;
         height: 228.6px;
         
@@ -281,8 +281,6 @@ main h2{
         background-color:rgba(58, 34, 71, 0.05);
         padding-bottom: 2.5rem;
     }
-
-
     
 }
 
@@ -296,34 +294,29 @@ main h2{
 
     .presentacion .divImgMovil{
         display: flex;
+        justify-content: center;  
+        background-color:rgba(54, 38, 140, 0.15);
     }
 
     .presentacion .parrafoOrdenador{
         display: none;
+        
     }
 
     .presentacion .parrafo1movil, .presentacion .parrafo2movil{
         display: flex;
     }
 
-    .presentacion .parrafo1movil{
-        /* margin-bottom: 10rem; */
-    }
     .presentacion p{
         max-width: 100%;
+        margin: 0;
     }
 
-    .presentacion .divImg{
-        margin-top: -4rem;
-        display: flex;
-        justify-content: center;  
+    .presentacion .parrafo1movil p, .presentacion .parrafo2movil p{
+        padding-bottom: 1rem;
     }
-
-    .presentacion .segundoParrafo{
-        padding-top: 10rem;
-    }
-
-    .divImg img{
+   
+    .divImgMovil img{
         width:275.4px;
         height: 171.45px;
         
@@ -331,13 +324,26 @@ main h2{
 
     .scrollButton{
         display: none;
-        right: 0.5rem;
+        right: 0rem;
         top: 20%;
         background-image: url(./telefono.png);
         background-size: cover;
         position: fixed;
         height: 2.5rem;
         width: 2.5rem;
+    }
+}
+
+@media (min-width:500px) and (max-width:768px){
+    .scrollButton{
+        display: none;
+        right: 0.5rem;
+        top: 20%;
+        background-image: url(./telefono.png);
+        background-size: cover;
+        position: fixed;
+        height: 3.5rem;
+        width: 3.5rem;
     }
 }
 
@@ -405,7 +411,7 @@ footer h3{
 }
 
 .telefono .numero>a:hover{
-    text-decoration: underline 0.05rem solid var(--azulOscuro);
+    text-decoration: underline solid var(--azulOscuro);
     text-underline-offset: 0.25rem;
 }
 
@@ -464,8 +470,6 @@ footer h3{
 }
 
 
-
-
 .paginasLegales{
     display: flex;
     justify-content: space-evenly;
@@ -480,7 +484,6 @@ footer h3{
     text-decoration: underline solid var(--azulOscuro);
     text-underline-offset: 0.25rem;
 }
-
 
 @media (max-width:768px){
 

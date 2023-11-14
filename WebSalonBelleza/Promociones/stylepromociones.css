@@ -140,17 +140,11 @@ nav a:hover{
 
 
 .fondoGeneral{
-    /* background-image: url(./fondoBrillo.jpg);
-    background-size: cover;
-    background-position: bottom; */
     background-color:rgba(58, 34, 71, 0.05);
-    /* height: 50rem; */
 
 }
 
 main{
-    /* display: flex;
-    justify-content: center; */
     display: block;
     text-align: center;
     margin-top: 0;  
@@ -254,10 +248,7 @@ main h1{
     margin-right: 2rem;
 }
 
-/* .estructura .margenBlanco{
-    width: 25%;
-    background-color: none;
-} */
+
 
 .estructura2{
     width: 75%;
@@ -305,16 +296,41 @@ main h1{
     
 }
 
-@media (max-width:768px){
+@media (max-width:650px){
+
+    .descripcion .texto{
+        display: none;
+    }
+
+    .descripcion h3, .descripcion .duracion{
+        margin-left: 1rem;
+    }
+
+}
+
+@media (min-width:500px) and (max-width:768px){
     .scrollButton{
         display: none;
         right: 0.5rem;
         top: 20%;
-        background-image: url(./telefono.png);
+        background-image: url(../telefono.png);
         background-size: cover;
         position: fixed;
-        height: 2rem;
-        width: 2rem;
+        height: 3.5rem;
+        width: 3.5rem;
+    }
+}
+
+@media (max-width:499px){
+    .scrollButton{
+        display: none;
+        right: 0rem;
+        top: 20%;
+        background-image: url(../telefono.png);
+        background-size: cover;
+        position: fixed;
+        height: 2.5rem;
+        width: 2.5rem;
     }
 }
 

@@ -70,7 +70,7 @@
                         los aspectos: realización, trato, cuidado, higiene y personalización. </p>
                 </div>
 
-                <div class="divImg divImgMovil>
+                <div class="divImg divImgMovil">
                     <img src="./imagenPortada.png" width="489.6rem" height="304.8rem">  
                 </div>
 
@@ -131,5 +131,21 @@
     <script src="./eventoFlotante.js"></script>
     <script src="./avisotablets.js"></script>
     <script src="./menudesplegable.js"></script>
+
+    <script>
+       window.addEventListener('load', function() {
+            function mostrarAlerta() {
+                alert("Si estás visitándonos desde un iPad o tablet, por favor pon tu dispositivo en posición horizontal para una mejor experiencia.");
+            }
+
+            function verificarOrientacion() {
+                var esTablet = (window.innerWidth > 768 && window.innerWidth < 1024);
+
+                if (esTablet && (navigator.userAgent.match(/iPad/i) || navigator.userAgent.match(/tablet/i))) {
+                    mostrarAlerta();
+                }
+            }
+        })
+    </script>
 </body>
 </html>
