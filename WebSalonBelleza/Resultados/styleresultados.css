@@ -409,6 +409,12 @@ main h1{
     .conjunto>div>div:active h3{
         display: block;
     }
+
+    .conjunto>div>div>h3{
+        color:var(--colorRosaPrincipal);
+        -webkit-text-stroke:initial;
+    
+    }
   }
 
 .anchoMax2{
@@ -463,13 +469,15 @@ main h1{
 @media (max-width:920px){
     .anchoMax{
         display: none; 
+       
     }
 
     .anchoMax2{
         width: 70%;
         display: grid;
         grid: repeat(10,1fr)/4fr;
-        padding-bottom: 5rem;
+        padding-bottom: 5rem; 
+        z-index: 0;
     }
 
     .anchoMax2 > div{
@@ -487,6 +495,10 @@ main h1{
         color:var(--colorRosaPrincipal);
         -webkit-text-stroke:initial;
     
+    }
+
+    .mobile-menu{
+        z-index: 3;
     }
 
 
