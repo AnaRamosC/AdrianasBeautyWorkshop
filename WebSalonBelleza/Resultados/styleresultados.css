@@ -146,17 +146,10 @@ main{
 }
 
 main h1{
-    /* font-family: var(--fuenteAdrianas);
-    font-size: 3.5rem;
-    color: var(--rosaFuerte);
-    padding-top: 3rem;
-    margin-top: 0;
-     */
     font-family: var(--fuenteAdrianas);
     font-size: 3.5rem;
     color: var(--rosaFuerte);
     background-image: linear-gradient(to right,rgba(183, 139, 26, 0.5)10%, rgba(183, 139, 26, 0.25) 50%,rgba(183, 139, 26, 0.5)90%);
-    /* background-color: rgba(183, 139, 26, 0.4); */
     border: 1px solid var(--colorDorado);
     padding-bottom: 0.5rem;
     margin-top: 0;
@@ -188,9 +181,16 @@ main h1{
     background-color: rgba(183, 139, 26, 0.2);
 }
 
+@media (max-width:768px){
+
+    .subtitulo h2{
+        font-size: 1rem;
+    }
+
+}
+
 .fondoGeneral{
     background-color:rgba(58, 34, 71, 0.05);
-    /* height: 75rem; */
 
 }
 
@@ -246,6 +246,7 @@ main h1{
 .contenedorFila2 .div3{
     background-image: url(./fotos/extensionesAlmendradasPeq.png);
     background-size: cover;
+    background-position: center;
     border-radius: 1rem;
 }
 .contenedorFila2 .div4{
@@ -276,10 +277,8 @@ main h1{
     background-image: url(./fotos/paletaColores2.png);
     background-size: cover;
     border-radius: 1rem;
-    background-position:center;
+    background-position:left;
 }
-
-
 
 .contenedorFila4 .div1{
     background-image: url(./fotos/Colorful.png);
@@ -315,7 +314,7 @@ main h1{
     background-image: url(./fotos/uñasDiferentesSiguiendoDiseño.png);
     background-size: cover;
     border-radius: 1rem;
-    background-position:center;
+    background-position:left;
 }
 .contenedorFila5 .div3{
     background-image: url(./fotos/uñasDiferentesSiguiendoDiseño2.png);
@@ -331,55 +330,52 @@ main h1{
 }
 
 
-.anchoMax .contenedorFila1 .div1, .contenedorFila2 .div3, .contenedorFila3 .div1, .contenedorFila3 .div4, .contenedorFila4 .div2,  .contenedorFila4 .div4{
+.contenedorFila1 .div1, .contenedorFila2 .div3, .contenedorFila3 .div1, .contenedorFila3 .div4, .contenedorFila4 .div2,  .contenedorFila4 .div4{
     display: flex;
     justify-content: left;
     align-items:end;
    
 }
 
-.anchoMax .contenedorFila1 .div2, .anchoMax .contenedorFila1 .div3, .anchoMax .contenedorFila1 .div4{
+.contenedorFila1 .div2, .contenedorFila1 .div3, .contenedorFila1 .div4{
     display: flex;
     justify-content: right;
     align-items:start;
 }
 
-.anchoMax .contenedorFila2 .div1 {
+.contenedorFila2 .div1 {
     display: flex;
     justify-content: right;
     align-items:start;
 }
 
-.anchoMax .contenedorFila2 .div2, .anchoMax .contenedorFila2 .div4{
+.contenedorFila2 .div2,.contenedorFila2 .div4{
     display: flex;
     justify-content: right;
     align-items:center;
 } 
 
-.anchoMax .contenedorFila3 .div2{
+.contenedorFila3 .div2{
     display: flex;
     justify-content: right;
     align-items:end;
 }
 
 
-.anchoMax .contenedorFila3 .div4{
+.contenedorFila3 .div4{
     display: flex;
     justify-content: right;
     align-items:start;
 }
 
-.anchoMax .contenedorFila5 .div2, .anchoMax .contenedorFila5 .div3{
+.contenedorFila5 .div2, .contenedorFila5 .div3{
     display: flex;
     justify-content: right;
     align-items:start;
 }
 
 
-
-
-
-.anchoMax>div>div>h3{
+.conjunto>div>div>h3{
     display: none;
     color: var(--rosaFuerte);
     -webkit-text-stroke: 0.000001rem var(--colorFondoMenu);
@@ -392,7 +388,7 @@ main h1{
 }
 
 
-.anchoMax>div>div:hover{
+.conjunto>div>div:hover{
  
     transform: scale(1.8);
    
@@ -401,8 +397,12 @@ main h1{
     padding-bottom: 5rem;
 }
 
-.anchoMax>div>div:hover h3{
+.conjunto>div>div:hover h3{
     display: block;
+}
+
+.anchoMax2{
+    display: none;
 }
 
 .scrollButton{
@@ -424,17 +424,67 @@ main h1{
     
 }
 
-@media (max-width:768px){
+@media (min-width:500px) and (max-width:768px){
     .scrollButton{
         display: none;
         right: 0.5rem;
         top: 20%;
-        background-image: url(./telefono.png);
+        background-image: url(../telefono.png);
         background-size: cover;
         position: fixed;
-        height: 2rem;
-        width: 2rem;
+        height: 3.5rem;
+        width: 3.5rem;
     }
+}
+
+@media (max-width:499px){
+    .scrollButton{
+        display: none;
+        right: 0.5rem;
+        top: 20%;
+        background-image: url(../telefono.png);
+        background-size: cover;
+        position: fixed;
+        height: 2.5rem;
+        width: 2.5rem;
+    }
+}
+
+@media (max-width:920px){
+    .anchoMax{
+        display: none; 
+    }
+
+    .anchoMax2{
+        width: 70%;
+        display: grid;
+        grid: repeat(10,1fr)/4fr;
+        padding-bottom: 5rem;
+    }
+
+    .anchoMax2 > div{
+        display: flex;
+        justify-content: space-between;
+        height: 10rem;
+        margin-bottom: 1rem;
+    }
+
+    .anchoMax2>div>div{
+        width: 47.5%;
+    }
+
+    .conjunto>div>div>h3{
+        color:#f49b9e;
+        -webkit-text-stroke:0.000001rem var(--colorRosaPrincipal);
+        font-family: var(--fuenteAdrianas);
+        font-size: 1.3rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        margin-bottom: 0.2rem;
+        margin-top: 0.2rem;
+    }
+
+
 }
 
 /* SECCIÓN FOOTER */
@@ -575,7 +625,7 @@ footer h3{
     text-underline-offset: 0.25rem;
 }
 
-@media (max-width:768px){
+@media (max-width:729px){
 
     footer{
         height: 10.5rem;

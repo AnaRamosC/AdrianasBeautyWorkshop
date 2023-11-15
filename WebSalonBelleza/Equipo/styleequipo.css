@@ -420,6 +420,16 @@ h2{
     }
 }
 
+@media (max-width:767px){
+    .contenedorAmbasTarjetas{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 60%;
+    }
+}
+
 /* SECCIÓN FOOTER */
 
 footer{

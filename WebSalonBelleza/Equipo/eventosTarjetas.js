@@ -4,11 +4,7 @@ function rotateCard(button) {
   }
 
 
-  // function rotateCard2(button) {
-  //   button = document.querySelector(".botonRegreso");
-  //   const contenedorTarjeta1 = button.parentElement.parentElement;
-  //   contenedorTarjeta1.style.transform = 'rotateY(0deg)';
-  // }
+
 
 
 var botonRegreso = document.querySelector(".botonRegreso")

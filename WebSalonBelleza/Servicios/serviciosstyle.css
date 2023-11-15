@@ -298,84 +298,7 @@ p{
     background-position: center;
 }
 
-@media (min-width:768px) and (max-width:1140px){
 
-
-    .impar2 p, .par2 p{
-        font-size: 0.6rem;
-    }
-
-    
-
-    .manicuraTipos .par1 .imagen{
-        background-position: left;
-    }
-   
-    
-}
-
-@media (max-width:768px){
-    h2{
-        font-size: 1.2rem;
-    }
-
-    .manicuraTipos h3{
-        font-size: 1rem;
-        margin: 0;
-    }
-
-    .todosServicios .manicuraTipos{
-        display: flex;
-        flex-direction: column;
-    }
-
-    
-    .manicuraTipos .impar1, .manicuraTipos .par1{
-        height: 16rem;
-    }
-   .manicuraTipos .par2{
-        height: 20rem;
-    }
-    
-
-    .manicuraTipos .impar2{
-        height: 25rem;
-    }
-
-    .manicuraTipos p{
-        font-size: 0.7rem;
-    }
-
-    .manicuraTipos .sinImagen{
-        display: flex;
-        justify-content: left;
-        height:12rem;
-    }
-
-    .manicuraTipos .impar, .manicuraTipos .par{
-        display: grid;
-        grid: 30% 70%/ 1fr 1fr 1fr 1fr; 
-        row-gap: 1rem;
-    
-    }
-
-    .manicuraTipos .impar .imagen, .manicuraTipos .par .imagen{
-        grid-row: 1/2;
-        grid-column: 2/4;
-        margin-top: 1rem;
-    }
-    .manicuraTipos .impar .descripcion, .manicuraTipos .par .descripcion{
-        grid-row: 2/3;
-        grid-column: 1/5;
-    }
-
-    .manicuraTipos .par1 .imagen, .manicuraTipos .par2 .imagen{
-        background-position: bottom;
-    }
-
-
-   
-}
 
 @media (min-width:500px) and (max-width:767px){
     h2{
@@ -437,6 +360,84 @@ p{
     }
 }
 
+@media (min-width:768px) and (max-width:1140px){
+
+
+    .impar2 p, .par2 p{
+        font-size: 0.6rem;
+    }
+
+    
+
+    .manicuraTipos .par1 .imagen{
+        background-position: left;
+    }
+   
+    
+}
+
+@media (max-width:499px){
+    h2{
+        font-size: 1.2rem;
+    }
+
+    .manicuraTipos h3{
+        font-size: 1rem;
+        margin: 0;
+    }
+
+    .todosServicios .manicuraTipos{
+        display: flex;
+        flex-direction: column;
+    }
+
+    
+    .manicuraTipos .impar1{
+        height: 16rem;
+    }
+
+    .manicuraTipos .par1,.manicuraTipos .par2{
+        height: 18rem;
+    }
+ 
+    .manicuraTipos .impar2{
+        height: 25rem;
+    }
+
+    .manicuraTipos p{
+        font-size: 0.7rem;
+    }
+
+    .manicuraTipos .sinImagen{
+        display: flex;
+        justify-content: left;
+        height:12rem;
+    }
+
+    .manicuraTipos .impar, .manicuraTipos .par{
+        display: grid;
+        grid: 30% 70%/ 1fr 1fr 1fr 1fr; 
+        row-gap: 1rem;
+    
+    }
+
+    .manicuraTipos .impar .imagen, .manicuraTipos .par .imagen{
+        grid-row: 1/2;
+        grid-column: 2/4;
+        margin-top: 1rem;
+    }
+    .manicuraTipos .impar .descripcion, .manicuraTipos .par .descripcion{
+        grid-row: 2/3;
+        grid-column: 1/5;
+    }
+
+    .manicuraTipos .par1 .imagen, .manicuraTipos .par2 .imagen{
+        background-position: bottom;
+    }
+
+
+   
+}
 
 /*pedicura*/
 
@@ -672,7 +673,7 @@ p{
 @media (max-width:499px){
     .scrollButton{
         display: none;
-        right: 0rem;
+        right: 0.5rem;
         top: 20%;
         background-image: url(../telefono.png);
         background-size: cover;
@@ -825,7 +826,7 @@ footer h3{
     text-underline-offset: 0.25rem;
 }
 
-@media (max-width:768px){
+@media (max-width:729px){
 
     footer{
         height: 10.5rem;

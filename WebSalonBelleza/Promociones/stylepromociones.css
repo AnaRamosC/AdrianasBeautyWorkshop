@@ -324,7 +324,7 @@ main h1{
 @media (max-width:499px){
     .scrollButton{
         display: none;
-        right: 0rem;
+        right: 0.5rem;
         top: 20%;
         background-image: url(../telefono.png);
         background-size: cover;
@@ -472,7 +472,7 @@ footer h3{
     text-underline-offset: 0.25rem;
 }
 
-@media (max-width:768px){
+@media (max-width:729px){
 
     footer{
         height: 10.5rem;

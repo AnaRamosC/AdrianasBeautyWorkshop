@@ -322,17 +322,9 @@ main h2{
         
     }
 
-    .scrollButton{
-        display: none;
-        right: 0rem;
-        top: 20%;
-        background-image: url(./telefono.png);
-        background-size: cover;
-        position: fixed;
-        height: 2.5rem;
-        width: 2.5rem;
-    }
+
 }
+
 
 @media (min-width:500px) and (max-width:768px){
     .scrollButton{
@@ -344,6 +336,19 @@ main h2{
         position: fixed;
         height: 3.5rem;
         width: 3.5rem;
+    }
+}
+
+@media (max-width:499px){
+    .scrollButton{
+        display: none;
+        right: 0.5rem;
+        top: 20%;
+        background-image: url(./telefono.png);
+        background-size: cover;
+        position: fixed;
+        height: 2.5rem;
+        width: 2.5rem;
     }
 }
 
@@ -485,7 +490,7 @@ footer h3{
     text-underline-offset: 0.25rem;
 }
 
-@media (max-width:768px){
+@media (max-width:729px){
 
     footer{
         height: 10.5rem;
