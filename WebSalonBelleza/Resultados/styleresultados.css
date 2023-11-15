@@ -474,14 +474,9 @@ main h1{
     }
 
     .conjunto>div>div>h3{
-        color:#f49b9e;
-        -webkit-text-stroke:0.000001rem var(--colorRosaPrincipal);
-        font-family: var(--fuenteAdrianas);
-        font-size: 1.3rem;
-        margin-left: 1rem;
-        margin-right: 1rem;
-        margin-bottom: 0.2rem;
-        margin-top: 0.2rem;
+        color:var(--colorRosaPrincipal);
+        -webkit-text-stroke:0.000001rem #f49b9e;
+    
     }
 
 
