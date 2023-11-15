@@ -402,13 +402,6 @@ main h1{
 }
 
 @media (hover: none) and (pointer: coarse) {
-    .conjunto>div>div:active {
-      transform: scale(1.8);
-    }
-
-    .conjunto>div>div:active h3{
-        display: block;
-    }
 
     .conjunto>div>div>h3{
         color:var(--colorRosaPrincipal);
