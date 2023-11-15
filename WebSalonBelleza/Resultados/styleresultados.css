@@ -401,14 +401,7 @@ main h1{
     display: block;
 }
 
-@media (hover: none) and (pointer: coarse) {
 
-    .conjunto>div>div>h3{
-        color:var(--colorRosaPrincipal);
-        -webkit-text-stroke:initial;
-    
-    }
-  }
 
 .anchoMax2{
     display: none;
