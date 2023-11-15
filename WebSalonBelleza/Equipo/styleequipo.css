@@ -432,6 +432,11 @@ h2{
 
 
 @media (max-width:767px){
+
+    h2{
+        -webkit-text-stroke:initial;
+        color: var(--rosaFuerte);
+    }
     .seccionNombres{
         display: none;
     }

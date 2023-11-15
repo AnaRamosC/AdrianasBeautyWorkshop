@@ -401,6 +401,16 @@ main h1{
     display: block;
 }
 
+@media (hover: none) and (pointer: coarse) {
+    .conjunto>div>div:active {
+      transform: scale(1.8);
+    }
+
+    .conjunto>div>div:active h3{
+        display: block;
+    }
+  }
+
 .anchoMax2{
     display: none;
 }
@@ -475,7 +485,7 @@ main h1{
 
     .conjunto>div>div>h3{
         color:var(--colorRosaPrincipal);
-        -webkit-text-stroke:0.000001rem #f49b9e;
+        -webkit-text-stroke:initial;
     
     }
 
