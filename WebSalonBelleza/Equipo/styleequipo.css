@@ -150,7 +150,6 @@ nav a:hover{
 .fondoGeneral{
     /* background-color: rgba(178, 145, 63, 0.5); */
     background-color:rgba(58, 34, 71, 0.1);
-    height: 50rem;
 
 }
 
@@ -185,6 +184,9 @@ main h1{
         padding-top: 1.5rem;
     }
 
+}
+.seccionNombres2, .seccionNombres3{
+    display: none;
 }
 
 .seccionNombres{
@@ -240,7 +242,6 @@ h2{
 }
 
 .tarjetaAdriana, .tarjetaLuka{
-    /* perspective: 1000px; */
     width: 25rem;
     height: 35rem;
 
@@ -253,13 +254,9 @@ h2{
     height: 100%;
     transform-style: preserve-3d;
     transition: transform 1s;
-    /* transform: rotateY(0deg); */
     position: relative;
 }
 
-/* .tarjetaAdriana:hover .contenedorTarjeta1 {
-    transform: rotateY(-180deg);
-  } */
 
 .caraDelanteraAdriana,.caraDelanteraLuka,.caraTrasera {
   width: 100%;
@@ -407,26 +404,78 @@ h2{
         width: 85%;
     }
 }
-@media (max-width:768px){
+@media (min-width:500px) and (max-width:768px){
     .scrollButton{
         display: none;
         right: 0.5rem;
         top: 20%;
-        background-image: url(./telefono.png);
+        background-image: url(../telefono.png);
         background-size: cover;
         position: fixed;
-        height: 2rem;
-        width: 2rem;
+        height: 3.5rem;
+        width: 3.5rem;
     }
 }
 
+@media (max-width:499px){
+    .scrollButton{
+        display: none;
+        right: 0.5rem;
+        top: 20%;
+        background-image: url(../telefono.png);
+        background-size: cover;
+        position: fixed;
+        height: 2.5rem;
+        width: 2.5rem;
+    }
+}
+
+
 @media (max-width:767px){
+    .seccionNombres{
+        display: none;
+    }
+
+    .mobile-menu{
+        z-index: 3;
+    }
     .contenedorAmbasTarjetas{
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: 60%;
+        width: 90%;
+        z-index: 0;
+        margin-top: 0;
+    }
+
+
+
+    .tarjetaAdriana, .tarjetaLuka{
+        width: 20rem;
+        height: 34rem;
+        
+    }
+
+    .caraTrasera{
+        width: 20rem;
+        border: 1px solid var(--colorDorado);
+    }
+
+    .tarjetaLuka{
+        margin-top: -3.3rem;
+    }
+
+    .seccionNombres2{
+        display: flex;
+        padding-top: 1rem;
+    }
+
+    .seccionNombres3{
+        display: flex;
+        justify-content: right;
+        padding-bottom: 2rem;
+        margin-top: -3.4rem;
     }
 }
 
@@ -569,7 +618,7 @@ footer h3{
 }
 
 
-@media (max-width:768px){
+@media (max-width:729px){
 
     footer{
         height: 10.5rem;
